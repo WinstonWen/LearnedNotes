@@ -1,4 +1,25 @@
 ## git命令
+
+### git 安装
+	配置信息
+	git config --global user.email "<邮箱>"
+	git config --global user.name "<NAME>"
+### 代码上传流程
+github操作：
+```
+创建好repository
+```
+本地操作：
+```
+	cd 文件地址
+	git init
+	git add .
+	git status -s  # 查看是否添加到本地仓库
+	git commit -m "frist commit"
+	git remote add origin 'https://github.com/****/******.git'  # 关联远程代码库
+	git push -u origin master  # 提交
+```
+
 ### git init
 	初始化一个Git仓库
 	如 git init test
@@ -28,6 +49,7 @@
 
 ### git commit
 	执行 git commit 将缓存区内容添加到仓库中
+	git commit -m "describe"
 
 ### git remote add origin <地址>
 	将本地仓库与远程仓库关联起来
